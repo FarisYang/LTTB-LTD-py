@@ -135,7 +135,6 @@ def ltd(data, n_out):
     # Dynamically adjust bucket size
     n_bins = n_out - 2
     data_bins = _split_data(data, n_out)
-    a=[len(bin) for bin in data_bins]
 
     # Prepare output array
     # First and last points are the same as in the input.

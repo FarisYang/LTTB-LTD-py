@@ -50,7 +50,6 @@ def lttb(data, n_out):
     # Split data into bins
     n_bins = n_out - 2
     data_bins = np.array_split(data[1: len(data) - 1], n_bins)
-    a = [len(bin) for bin in data_bins]
 
     # Prepare output array
     # First and last points are the same as in the input.
