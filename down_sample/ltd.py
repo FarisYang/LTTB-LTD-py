@@ -19,7 +19,7 @@ def _split_data(data, n_out):
     :param data:
     :return:
     """
-    iteration_num = int(len(data)*10/n_out)
+    iteration_num = int(len(data)/(n_out*10))
     n_bins = n_out - 2
     data_bins = np.array_split(data[1: len(data) - 1], n_bins)
     curr_iteration = 1
